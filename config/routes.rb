@@ -2,11 +2,11 @@ Rails.application.routes.draw do
 	resources :orders
 	resources :schedules
 
-	resources :api do
-	  member do
-	    get :createOrder
-	  end
-	 end
-
   root 'home#index'
+
+  scope '/api' do
+    scope '/external' do
+      get '/createOrder' => 'api#create'
+    end
+  end
 end
