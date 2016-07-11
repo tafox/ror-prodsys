@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: 2016-07-11 11:48:16
+  finish: 2016-07-11 11:48:16
+  machine: 1
+  labour: 1
+
+two:
+  start: 2016-07-11 11:48:16
+  finish: 2016-07-11 11:48:16
+  machine: 1
+  labour: 1

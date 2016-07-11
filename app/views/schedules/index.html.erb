@@ -1,0 +1,21 @@
+<h1>Schedule</h1>
+ 
+<table>
+  <tr>
+    <th>Schedule ID</th>
+    <th>Start</th>
+    <th>Finish</th>
+    <th>Labour ID</th>
+    <th>Machine ID</th>
+  </tr>
+ 
+  <% @schedules.each do |schedule| %>
+    <tr>
+      <td><%= schedule.id %></td>
+      <td><%= schedule.start %></td>
+      <td><%= schedule.finish %></td>
+      <td><%= schedule.labour %></td>
+      <td><%= schedule.machine %></td>
+    </tr>
+  <% end %>
+</table>
