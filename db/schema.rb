@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20160711155550) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "labours", force: :cascade do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,13 +31,13 @@ ActiveRecord::Schema.define(version: 20160711155550) do
     t.integer  "quantity"
     t.integer  "schedule"
     t.integer  "status"
-    t.string   "notes"
+    t.text     "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string   "name"
+    t.text     "name"
     t.integer  "stock"
     t.integer  "time"
     t.datetime "created_at", null: false
