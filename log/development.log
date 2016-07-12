@@ -144,3 +144,28 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/api/external/createOrder?product_id=3&quantity=30&notes=blah" for ::1 at 2016-07-12 10:55:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"3", "quantity"=>"30", "notes"=>"blah"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schedules" ("start", "finish", "machine", "labour", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start", 2016-07-12 20:10:00 UTC], ["finish", 2016-07-15 08:40:00 UTC], ["machine", 1], ["labour", 1], ["created_at", 2016-07-12 14:55:53 UTC], ["updated_at", 2016-07-12 14:55:53 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 3], ["quantity", 30], ["schedule", 1], ["status", 0], ["notes", "blah"], ["created_at", 2016-07-12 14:55:53 UTC], ["updated_at", 2016-07-12 14:55:53 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/orders/1
+Completed 302 Found in 59ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/orders/1" for ::1 at 2016-07-12 10:55:53 -0400
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 445ms (Views: 441.7ms | ActiveRecord: 0.4ms)
+
+
