@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   scope '/api' do
     scope '/external' do
       get '/createOrder' => 'api#create'
+      get '/viewOrder' => 'api#view'
     end
   end
 end
