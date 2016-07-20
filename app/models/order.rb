@@ -43,23 +43,60 @@ class Order < ApplicationRecord
 				#product_id=' + r.rawmaterial_id.to_s + '&quantity=' + amount.to_s).read
 			end
 
-                        if Labour.all.size == 0
-                                response = open('http://cs490-hr-2016.appspot.com/hrms/payroll').read
-                                employees = JSON.parse(response);
-                                employees.each do |e|
-                                        labour = {
-                                                id: e.employee_id,
-						name: e.name
-                                        }
+			mockdata = ['20161001108', '20161001109', '20161001110', '20161001111']
+			baseUri = 'https://cs490-hr-2016.appspot.com/_ah/api/hrms/v1'
+	                
+			if Labour.all.size == 0
+                                #response = open('/payroll').read
+                                #employees = JSON.parse(response);
+                                
+				#employees.each do |e|
+                                #        labour = {
+                                #                id: e.employee_id,
+                                #        }
+				#	@labour = Labour.new(labour)
+				#	@labour.save
+                                #end
+				
+				mockdata.each do |e|
+					labour = { id: e }
 					@labour = Labour.new(labour)
 					@labour.save
-                                end
+				end
                         end
+
+			month = LabourAvailability.order(month:).last.month;
+			if LabourAvailability.where(:utilized = false).size <= 20
+				Labour.all.each do |e|
+					uri = URI.parse(baseUri + '/employeeStatus/' + e.employee_id + '20160/' + (month + 1).to_s)
+					header = {
+						'Content-Type' =>'application/json'
+					}
+					http = Net::HTTP.new(uri.host, uri.port)
+					http.use_ssl = true;
+					
+					request = Net::HTTP::Post.new(uri.request_uri, header)
+					request.body = toSend
+					response = http.request(request)
+
+					days = response.body["availableDates"]
+					days.each do |day|
+						labour_availability = {
+							month: 7,
+							day: day.to_i
+							employee_id: e.employee_id
+						}
+						@labour_availability = LabourAvailability.new(labour_availability)
+						@labour_availability.save
+					end
+					
+					puts response.body
+				end
+			end
 
                         rescue OpenURI::HTTPError => ex
 				puts ex.io.string
                 end
-
 
 		Schedule.getSchedule(params[:order][:product_id], params[:order][:quantity])
 		
