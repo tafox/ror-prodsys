@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'net/http'
 
 class Order < ApplicationRecord
 	def self.newOrder params
@@ -14,9 +15,32 @@ class Order < ApplicationRecord
 		}
 
 		begin
+			baseUri = 'http://scmgroup.azurewebsites.net/api/inventory'
 			RawMaterialProduct.where(product_id: product_id).each do |r|
 				amount = r.quantity.to_i * quantity.to_i
-				response = open('http://scmgroup.azurewebsites.net/api/ip/inventory/procurement_order?product_id=' + r.rawmaterial_id.to_s + '&quantity=' + amount.to_s).read
+				response = open(baseUri + '/raw_materials/' + r.rawmaterial_id.to_s).read
+				response.delete! '\\'
+				response[0] = ''
+				resp2 = response.chomp('"')
+				remaining_mats = JSON.parse(resp2)
+				amount -= remaining_mats[0]["Units"].to_i + remaining_mats[0]["Inbound Units"].to_i
+
+				header = {
+					'Content-Type' =>'application/json'
+				}
+				toSend = {
+					'raw_material_id' => r.rawmaterial_id,
+					'destination_site_id' => 1,
+					'buy_amount' => amount
+				}.to_json
+				uri = URI.parse(baseUri + '/new_procurement_order')	
+				http = Net::HTTP.new(uri.host, uri.port)
+				request = Net::HTTP::Post.new(uri.request_uri, header)
+				request.body = toSend
+				response = http.request(request)
+				puts response.body
+
+				#product_id=' + r.rawmaterial_id.to_s + '&quantity=' + amount.to_s).read
 			end
 
                         if Labour.all.size == 0
@@ -33,7 +57,7 @@ class Order < ApplicationRecord
                         end
 
                         rescue OpenURI::HTTPError => ex
-				puts 'http error'
+				puts ex.io.string
                 end
 
 

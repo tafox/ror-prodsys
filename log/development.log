@@ -8058,3 +8058,1219 @@ Processing by ApiController#view as */*
 Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:13:26 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/cygwin64/home/Chris/cs490/app/models/order.rb:25: unknown regexp options - rp
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:25: syntax error, unexpected '=', expecting keyword_end
+				//response = open(baseUri + '/procurement...
+				            ^):
+  
+app/models/order.rb:25: unknown regexp options - rp
+app/models/order.rb:25: syntax error, unexpected '=', expecting keyword_end
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1461.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:13:37 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/cygwin64/home/Chris/cs490/app/models/order.rb:25: unknown regexp options - rp
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:25: syntax error, unexpected '=', expecting keyword_end
+				//response = open(baseUri + '/procurement...
+				            ^):
+  
+app/models/order.rb:25: unknown regexp options - rp
+app/models/order.rb:25: syntax error, unexpected '=', expecting keyword_end
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1414.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:14:26 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.0ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/order.rb:20:in `+'
+app/models/order.rb:20:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1468.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:14:40 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+
+
+  
+TypeError (no implicit conversion of Fixnum into String):
+  
+app/models/order.rb:20:in `+'
+app/models/order.rb:20:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1332.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:14:58 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSchedule Load (9.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (60.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (59.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:14:59 UTC], ["updated_at", 2016-07-20 03:14:59 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 4], ["status", 0], ["created_at", 2016-07-20 03:14:59 UTC], ["updated_at", 2016-07-20 03:14:59 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/orders/4
+Completed 302 Found in 674ms (ActiveRecord: 147.0ms)
+
+
+Started GET "/orders/4" for ::1 at 2016-07-19 23:14:59 -0400
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 104ms (Views: 79.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/default.js" for ::1 at 2016-07-19 23:14:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  
+Started GET "/stylesheets/default.css" for ::1 at 2016-07-19 23:14:59 -0400
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+  
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (42.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (13.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:15:03 -0400
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+Processing by ApiController#create as */*
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3930.2ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3439.2ms)
+  [1m[36mRawMaterialProduct Load (328.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (19.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (720.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (113.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (129.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:15:10 UTC], ["updated_at", 2016-07-20 03:15:10 UTC]]
+  [1m[35m (60.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 5], ["status", 0], ["created_at", 2016-07-20 03:15:10 UTC], ["updated_at", 2016-07-20 03:15:10 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6351ms (Views: 0.1ms | ActiveRecord: 1371.1ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:16:21 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:16:22 UTC], ["updated_at", 2016-07-20 03:16:22 UTC]]
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 6], ["status", 0], ["created_at", 2016-07-20 03:16:22 UTC], ["updated_at", 2016-07-20 03:16:22 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 304ms (Views: 0.3ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:16:26 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (33.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:16:26 UTC], ["updated_at", 2016-07-20 03:16:26 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 7], ["status", 0], ["created_at", 2016-07-20 03:16:26 UTC], ["updated_at", 2016-07-20 03:16:26 UTC]]
+  [1m[35m (106.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 331ms (Views: 0.3ms | ActiveRecord: 140.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:17:07 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `put' for #<Class:0x0000000d8c8748>
+Did you mean?  putc
+               puts):
+  
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1496.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:17:24 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:17:25 UTC], ["updated_at", 2016-07-20 03:17:25 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 8], ["status", 0], ["created_at", 2016-07-20 03:17:25 UTC], ["updated_at", 2016-07-20 03:17:25 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 305ms (Views: 0.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:18:01 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:18:01 UTC], ["updated_at", 2016-07-20 03:18:01 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 9], ["status", 0], ["created_at", 2016-07-20 03:18:01 UTC], ["updated_at", 2016-07-20 03:18:01 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 243ms (Views: 0.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:20:10 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:20:11 UTC], ["updated_at", 2016-07-20 03:20:11 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 10], ["status", 0], ["created_at", 2016-07-20 03:20:11 UTC], ["updated_at", 2016-07-20 03:20:11 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 513ms (Views: 0.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:21:33 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (56.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:21:34 UTC], ["updated_at", 2016-07-20 03:21:34 UTC]]
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 11], ["status", 0], ["created_at", 2016-07-20 03:21:34 UTC], ["updated_at", 2016-07-20 03:21:34 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 435ms (Views: 0.1ms | ActiveRecord: 100.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:24:12 -0400
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:24:12 -0400
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:24:12 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 1\",\"Units\":6,\"Inbound Units\":2},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 2\",\"Units\":27,\"Inbound Units\":51},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 3\",\"Units\":80,\"Inbound Units\":0}]"'):
+  
+app/models/order.rb:21:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1541.1ms)
+Processing by ApiController#create as */*
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (3.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 18.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 1\",\"Units\":6,\"Inbound Units\":2},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 2\",\"Units\":27,\"Inbound Units\":51},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 3\",\"Units\":80,\"Inbound Units\":0}]"'):
+  
+app/models/order.rb:21:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 831ms (ActiveRecord: 11.0ms)
+
+
+  
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+JSON::ParserError (784: unexpected token at '"[{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 1\",\"Units\":6,\"Inbound Units\":2},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 2\",\"Units\":27,\"Inbound Units\":51},{\"Material ID\":1,\"Type\":\"Ink\",\"Site\":\"Warehouse 3\",\"Units\":80,\"Inbound Units\":0}]"'):
+  
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+app/models/order.rb:21:in `block in newOrder'
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1635.1ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1464.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:26:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/cygwin64/home/Chris/cs490/app/models/order.rb:22: unknown regexp options - rag
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+				//remaining_mats = JSON.parse(response)
+				                ^
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:23: unknown regexp options - pt
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+				//puts remaining_mats[0]["Units"].to_i 
+				                     ^
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:24: unknown regexp options - pt
+C:/cygwin64/home/Chris/cs490/app/models/order.rb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+				//puts remaining_mats[0]["Inbound Units"].to_i
+				                     ^):
+  
+app/models/order.rb:22: unknown regexp options - rag
+app/models/order.rb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/models/order.rb:23: unknown regexp options - pt
+app/models/order.rb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/models/order.rb:24: unknown regexp options - pt
+app/models/order.rb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1482.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:27:28 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:27:29 UTC], ["updated_at", 2016-07-20 03:27:29 UTC]]
+  [1m[35m (67.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 12], ["status", 0], ["created_at", 2016-07-20 03:27:29 UTC], ["updated_at", 2016-07-20 03:27:29 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 510ms (Views: 0.2ms | ActiveRecord: 106.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:30:36 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:30:36 UTC], ["updated_at", 2016-07-20 03:30:36 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 13], ["status", 0], ["created_at", 2016-07-20 03:30:36 UTC], ["updated_at", 2016-07-20 03:30:36 UTC]]
+  [1m[35m (22.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 472ms (Views: 0.2ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-19 23:31:03 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 337ms (ActiveRecord: 8.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{"Material ID":1,"Type":"Ink","Site":"Warehouse 1","Units":6,"Inbound Units":2},{"Material ID":1,"Type":"Ink","Site":"Warehouse 2","Units":27,"Inbound Units":51},{"Material ID":1,"Type":"Ink","Site":"Warehouse 3","Units":80,"Inbound Units":0}]"'):
+  
+app/models/order.rb:22:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1474.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:31:14 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 2.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{"Material ID":1,"Type":"Ink","Site":"Warehouse 1","Units":6,"Inbound Units":2},{"Material ID":1,"Type":"Ink","Site":"Warehouse 2","Units":27,"Inbound Units":51},{"Material ID":1,"Type":"Ink","Site":"Warehouse 3","Units":80,"Inbound Units":0}]"'):
+  
+app/models/order.rb:22:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1376.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:35:33 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 2335ms (ActiveRecord: 8.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{"Material ID":1,"Type":"Ink","Site":"Warehouse 1","Units":6,"Inbound Units":2},{"Material ID":1,"Type":"Ink","Site":"Warehouse 2","Units":27,"Inbound Units":51},{"Material ID":1,"Type":"Ink","Site":"Warehouse 3","Units":80,"Inbound Units":0}]"'):
+  
+app/models/order.rb:23:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1515.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:35:53 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 11.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{"Material ID":1,"Type":"Ink","Site":"Warehouse 1","Units":6,"Inbound Units":2},{"Material ID":1,"Type":"Ink","Site":"Warehouse 2","Units":27,"Inbound Units":51},{"Material ID":1,"Type":"Ink","Site":"Warehouse 3","Units":80,"Inbound Units":0}]"'):
+  
+app/models/order.rb:24:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1549.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:36:22 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 9.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/models/order.rb:24:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1316.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:37:17 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 10.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"'):
+  
+app/models/order.rb:25:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1380.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:39:17 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 418ms (ActiveRecord: 9.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"[{"Material ID":1,"Type":"Ink","Site":"Warehouse 1","Units":6,"Inbound Units":2},{"Material ID":1,"Type":"Ink","Site":"Warehouse 2","Units":27,"Inbound Units":51},{"Material ID":1,"Type":"Ink","Site":"Warehouse 3","Units":80,"Inbound Units":0}]"'):
+  
+app/models/order.rb:24:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1342.1ms)
+Started GET "/stylesheets/default.css" for ::1 at 2016-07-19 23:39:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (39.0ms)
+Started GET "/javascripts/default.js" for ::1 at 2016-07-19 23:39:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (121.0ms)
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (2013.1ms)
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (33.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1976.1ms)
+Started GET "/products" for ::1 at 2016-07-19 23:40:34 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (59.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 538ms (Views: 447.2ms | ActiveRecord: 64.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:40:47 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 503ms (ActiveRecord: 10.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"'):
+  
+app/models/order.rb:25:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1335.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:41:52 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 431ms (ActiveRecord: 10.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"'):
+  
+app/models/order.rb:26:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1560.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:42:30 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
+
+
+  
+JSON::ParserError (784: unexpected token at '"'):
+  
+app/models/order.rb:26:in `block in newOrder'
+app/models/order.rb:18:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1522.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:42:48 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (37.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (2.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:42:49 UTC], ["updated_at", 2016-07-20 03:42:49 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (36.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 10], ["schedule", 14], ["status", 0], ["created_at", 2016-07-20 03:42:49 UTC], ["updated_at", 2016-07-20 03:42:49 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/orders/14
+Completed 302 Found in 616ms (ActiveRecord: 150.0ms)
+
+
+Started GET "/orders/14" for ::1 at 2016-07-19 23:42:49 -0400
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mOrder Load (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 104ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2016-07-19 23:42:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+Started GET "/javascripts/default.js" for ::1 at 2016-07-19 23:42:49 -0400
+  
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (20.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (22.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3730.2ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3594.2ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:43:08 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (44.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 03:43:08 UTC], ["updated_at", 2016-07-20 03:43:08 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 10], ["schedule", 15], ["status", 0], ["created_at", 2016-07-20 03:43:08 UTC], ["updated_at", 2016-07-20 03:43:08 UTC]]
+  [1m[35m (25.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/orders/15
+Completed 302 Found in 520ms (ActiveRecord: 144.0ms)
+
+
+Started GET "/orders/15" for ::1 at 2016-07-19 23:43:08 -0400
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 113ms (Views: 87.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2016-07-19 23:43:09 -0400
+  
+Started GET "/javascripts/default.js" for ::1 at 2016-07-19 23:43:09 -0400
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+  
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (23.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (14.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3800.2ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3701.2ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-19 23:59:55 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 1027ms (ActiveRecord: 7.0ms)
+
+
+  
+NoMethodError (undefined method `raw_material_id' for #<RawMaterialProduct:0x0000000e002d10>
+Did you mean?  rawmaterial_id
+               rawmaterial_id=
+               rawmaterial_id?):
+  
+app/models/order.rb:32:in `block in newOrder'
+app/models/order.rb:19:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1551.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-20 00:00:39 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 416ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `raw_material_id' for #<RawMaterialProduct:0x0000000e44b9d0>
+Did you mean?  rawmaterial_id
+               rawmaterial_id=
+               rawmaterial_id?):
+  
+app/models/order.rb:32:in `block in newOrder'
+app/models/order.rb:19:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1524.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-20 00:02:08 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `raw_material_id' for #<RawMaterialProduct:0x000000050c12f0>
+Did you mean?  rawmaterial_id
+               rawmaterial_id=
+               rawmaterial_id?):
+  
+app/models/order.rb:32:in `block in newOrder'
+app/models/order.rb:19:in `newOrder'
+app/controllers/api_controller.rb:7:in `create'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1503.1ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=10" for ::1 at 2016-07-20 00:02:21 -0400
+Processing by ApiController#create as HTML
+  Parameters: {"product_id"=>"1", "quantity"=>"10"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 04:02:23 UTC], ["updated_at", 2016-07-20 04:02:23 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 10], ["schedule", 16], ["status", 0], ["created_at", 2016-07-20 04:02:23 UTC], ["updated_at", 2016-07-20 04:02:23 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/orders/16
+Completed 302 Found in 1494ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/orders/16" for ::1 at 2016-07-20 00:02:23 -0400
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 150ms (Views: 119.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2016-07-20 00:02:23 -0400
+Started GET "/javascripts/default.js" for ::1 at 2016-07-20 00:02:23 -0400
+  
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/configuration.rb:225:in `call'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:406:in `process_client'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/server.rb:271:in `block in run'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+puma (3.5.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (23.0ms)
+  Rendered collection of C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [51 times] (411.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3874.2ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3474.2ms)
+Started GET "/api/external/createOrder?product_id=1&quantity=102" for ::1 at 2016-07-20 00:04:39 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"1", "quantity"=>"102"}
+  [1m[36mSchedule Load (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (1.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 1]]
+  [1m[35m (60.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 04:04:40 UTC], ["updated_at", 2016-07-20 04:04:40 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 1], ["quantity", 102], ["schedule", 17], ["status", 0], ["created_at", 2016-07-20 04:04:40 UTC], ["updated_at", 2016-07-20 04:04:40 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 1284ms (Views: 0.1ms | ActiveRecord: 135.0ms)
+
+
+Started GET "/api/external/createOrder?product_id=3&quantity=102" for ::1 at 2016-07-20 00:05:24 -0400
+Processing by ApiController#create as */*
+  Parameters: {"product_id"=>"3", "quantity"=>"102"}
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRawMaterialProduct Load (0.0ms)[0m  [1m[34mSELECT "raw_material_products".* FROM "raw_material_products" WHERE "raw_material_products"."product_id" = $1[0m  [["product_id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labours"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSchedule Load (1.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "schedules".* FROM "schedules" WHERE "schedules"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schedules" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2016-07-20 04:05:26 UTC], ["updated_at", 2016-07-20 04:05:26 UTC]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "quantity", "schedule", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["product_id", 3], ["quantity", 102], ["schedule", 18], ["status", 0], ["created_at", 2016-07-20 04:05:26 UTC], ["updated_at", 2016-07-20 04:05:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 1931ms (Views: 0.1ms | ActiveRecord: 18.0ms)
+
+
