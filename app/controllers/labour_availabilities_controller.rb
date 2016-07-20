@@ -69,6 +69,6 @@ class LabourAvailabilitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def labour_availability_params
-      params.require(:labour_availability).permit(:month, :day, :labour_id, :utilized)
+      params.require(:labour_availability).permit(:labour_id, :day, :month, :schedule_id, :utilized)
     end
 end

@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  month: 1
+  labour_id: MyString
   day: 1
-  labour_id: 1
+  month: 1
+  schedule_id: 1
   utilized: false
 
 two:
-  month: 1
+  labour_id: MyString
   day: 1
-  labour_id: 1
+  month: 1
+  schedule_id: 1
   utilized: false

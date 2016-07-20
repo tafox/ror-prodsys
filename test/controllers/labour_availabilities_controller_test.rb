@@ -17,7 +17,7 @@ class LabourAvailabilitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create labour_availability" do
     assert_difference('LabourAvailability.count') do
-      post labour_availabilities_url, params: { labour_availability: { day: @labour_availability.day, labour_id: @labour_availability.labour_id, month: @labour_availability.month, utilized: @labour_availability.utilized } }
+      post labour_availabilities_url, params: { labour_availability: { day: @labour_availability.day, labour_id: @labour_availability.labour_id, month: @labour_availability.month, schedule_id: @labour_availability.schedule_id, utilized: @labour_availability.utilized } }
     end
 
     assert_redirected_to labour_availability_url(LabourAvailability.last)
@@ -34,7 +34,7 @@ class LabourAvailabilitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update labour_availability" do
-    patch labour_availability_url(@labour_availability), params: { labour_availability: { day: @labour_availability.day, labour_id: @labour_availability.labour_id, month: @labour_availability.month, utilized: @labour_availability.utilized } }
+    patch labour_availability_url(@labour_availability), params: { labour_availability: { day: @labour_availability.day, labour_id: @labour_availability.labour_id, month: @labour_availability.month, schedule_id: @labour_availability.schedule_id, utilized: @labour_availability.utilized } }
     assert_redirected_to labour_availability_url(@labour_availability)
   end
 

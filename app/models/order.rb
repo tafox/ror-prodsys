@@ -73,9 +73,11 @@ class Order < ApplicationRecord
 				month = lastMonth.last.month
 			end
 			nextMonth = month + 1
-			if LabourAvailability.where(:utilized == false).size <= 20
+
+			#cannot fulfill more than 4000 orders
+			if LabourAvailability.where(:day.to_s.to_i > Time.new.day.to_s.to_i, :utilized == false).size <= 20
 				Labour.all.each do |e|
-					uri = URI.parse(baseUri + '/employeeStatus/' + e.employee_id + '/201607')
+					uri = URI.parse(baseUri + '/employeeStatus/' + e.employee_id + '/20160' + nextMonth.to_s)
 					header = {
 						'Content-Type' =>'application/json'
 					}

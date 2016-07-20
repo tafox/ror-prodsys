@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :labours
   resources :labour_availabilities
+  resources :labours
   resources :schedules
   resources :raw_material_products
 	resources :orders

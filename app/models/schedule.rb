@@ -1,13 +1,6 @@
 class Schedule < ApplicationRecord
 	def self.getSchedule(product_id, quantity)
 		product = Product.find(product_id)
-		available_labour = LabourAvailability.order(month: :asc, day: :asc).limit((quantity/200).ceil.to_i)
-		avallable_labour.each do |l|
-			l.update(utilized: true)
-		end		
-
-		start = DateTime.new(2016, available_labour.first.month, available_labour.first.day, 9, 0, 0)
-		finish = DateTime.new(2016, available_labour.last.month, available_labour.last.day, 17, 0, 0)
 		
 		lastSchedule = Schedule.order("created_at").last
 		if lastSchedule.blank?
@@ -17,6 +10,18 @@ class Schedule < ApplicationRecord
 			start = lastSchedule[:finish]
 			id = lastSchedule[:id] + 1
 		end
+		
+		available_labour = LabourAvailability.where('utilized = ? AND day > ?', false, Time.new.day.to_s.to_i).order(month: :asc, day: :asc).limit((quantity.to_i/200).ceil.to_i + 1)
+		available_labour.each do |l|
+			l.update(utilized: true)
+			l.update(schedule_id: id);
+		end
+
+		puts (quantity.to_i/200).ceil.to_i + 1
+
+		start = DateTime.new(2016, available_labour.first.month, available_labour.first.day, 9, 0, 0)
+		finish = DateTime.new(2016, available_labour.last.month, available_labour.last.day, 17, 0, 0)
+		
 		machine = Machine.assignMachine(id)
 		labour = Labour.assignLabour(id)		
 
