@@ -36,6 +36,7 @@ class Order < ApplicationRecord
 				uri = URI.parse(baseUri + '/new_procurement_order')	
 				http = Net::HTTP.new(uri.host, uri.port)
 				request = Net::HTTP::Post.new(uri.request_uri, header)
+				
 				request.body = toSend
 				response = http.request(request)
 				puts response.body
@@ -79,18 +80,18 @@ class Order < ApplicationRecord
 						'Content-Type' =>'application/json'
 					}
 					http = Net::HTTP.new(uri.host, uri.port)
-					http.use_ssl = true;
-					
+					http.use_ssl = true
+					http.verify_mode = OpenSSL::SSL::VERIFY_NONE # read into this
 					request = Net::HTTP::Post.new(uri.request_uri, header)
-					request.body = toSend
 					response = http.request(request)
 
-					days = response.body["availableDates"]
+					days = JSON.parse(response.body)["avaliableDates"]
+					puts days
 					days.each do |day|
 						labour_availability = {
 							month: 7,
 							day: day.to_i,
-							employee_id: e.employee_id
+							labour_id: e.employee_id
 						}
 						@labour_availability = LabourAvailability.new(labour_availability)
 						@labour_availability.save
