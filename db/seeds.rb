@@ -22,12 +22,6 @@ RawMaterialProduct.create(product_id:4, rawmaterial_id:3, quantity:2)
 RawMaterialProduct.create(product_id:5, rawmaterial_id:2, quantity:10)
 RawMaterialProduct.create(product_id:5, rawmaterial_id:3, quantity:3)
 
-Labour.create(name: 'Bill')
-Labour.create(name: 'John')
-Labour.create(name: 'Tim')
-Labour.create(name: 'Joey')
-Labour.create(name: 'Craig')
-
 for i in 1..5
 	Machine.create
 end

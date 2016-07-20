@@ -59,16 +59,22 @@ class Order < ApplicationRecord
                                 #end
 				
 				mockdata.each do |e|
-					labour = { id: e }
+					labour = { employee_id: e }
 					@labour = Labour.new(labour)
 					@labour.save
 				end
                         end
 
-			month = LabourAvailability.order(month:).last.month;
-			if LabourAvailability.where(:utilized = false).size <= 20
+			lastMonth = LabourAvailability.order(:month)
+			if lastMonth.blank?
+				month = 7
+			else
+				month = lastMonth.last.month
+			end
+			nextMonth = month + 1
+			if LabourAvailability.where(:utilized == false).size <= 20
 				Labour.all.each do |e|
-					uri = URI.parse(baseUri + '/employeeStatus/' + e.employee_id + '20160/' + (month + 1).to_s)
+					uri = URI.parse(baseUri + '/employeeStatus/' + e.employee_id + '/201607')
 					header = {
 						'Content-Type' =>'application/json'
 					}
@@ -83,7 +89,7 @@ class Order < ApplicationRecord
 					days.each do |day|
 						labour_availability = {
 							month: 7,
-							day: day.to_i
+							day: day.to_i,
 							employee_id: e.employee_id
 						}
 						@labour_availability = LabourAvailability.new(labour_availability)
