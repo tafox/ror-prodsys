@@ -7,14 +7,25 @@ class Schedule < ApplicationRecord
 			start = DateTime.new(2016, 07, 12, 20, 10, 0)
 			id = 1
 		else
-			start = lastSchedule[:finish] + 30.minutes
+			start = lastSchedule[:finish]
 			id = lastSchedule[:id] + 1
 		end
-		finish = start + time.minutes
+		finish = start
 		labour = Labour.assignLabour(id)
 		machine = Machine.assignMachine(id)
-		schedule = Schedule.new(start: start, finish: finish, machine: machine, labour: labour)
+		schedule = Schedule.new(start: start, end: finish, machine_id: machine, labour_id: labour)
 		schedule.save
+		return id
+	end
+	def self.lastId
+		lastSchedule = Schedule.order("created_at").last
+		if lastSchedule.blank?
+			start = DateTime.new(2016, 07, 12, 20, 10, 0)
+			id = 1
+		else
+			start = lastSchedule[:finish]
+			id = lastSchedule[:id] + 1
+		end
 		return id
 	end
 end

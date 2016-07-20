@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @labour_availability.month %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @labour_availability.day %>
+</p>
+
+<p>
+  <strong>Labour:</strong>
+  <%= @labour_availability.labour_id %>
+</p>
+
+<p>
+  <strong>Utilized:</strong>
+  <%= @labour_availability.utilized %>
+</p>
+
+<%= link_to 'Edit', edit_labour_availability_path(@labour_availability) %> |
+<%= link_to 'Back', labour_availabilities_path %>

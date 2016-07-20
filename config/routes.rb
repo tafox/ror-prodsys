@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :labour_availabilities
+  resources :schedules
+  resources :raw_material_products
 	resources :orders
 	resources :schedules
   resources :products

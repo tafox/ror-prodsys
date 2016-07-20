@@ -1,0 +1,2 @@
+module RawMaterialProductsHelper
+end

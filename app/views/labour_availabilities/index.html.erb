@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Labour Availabilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Day</th>
+      <th>Labour</th>
+      <th>Utilized</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @labour_availabilities.each do |labour_availability| %>
+      <tr>
+        <td><%= labour_availability.month %></td>
+        <td><%= labour_availability.day %></td>
+        <td><%= labour_availability.labour_id %></td>
+        <td><%= labour_availability.utilized %></td>
+        <td><%= link_to 'Show', labour_availability %></td>
+        <td><%= link_to 'Edit', edit_labour_availability_path(labour_availability) %></td>
+        <td><%= link_to 'Destroy', labour_availability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Labour Availability', new_labour_availability_path %>

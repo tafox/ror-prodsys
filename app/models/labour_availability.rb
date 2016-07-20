@@ -1,0 +1,2 @@
+class LabourAvailability < ApplicationRecord
+end

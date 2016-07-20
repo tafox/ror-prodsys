@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Raw Material Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Rawmaterial</th>
+      <th>Quantity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @raw_material_products.each do |raw_material_product| %>
+      <tr>
+        <td><%= raw_material_product.product_id %></td>
+        <td><%= raw_material_product.rawmaterial_id %></td>
+        <td><%= raw_material_product.quantity %></td>
+        <td><%= link_to 'Show', raw_material_product %></td>
+        <td><%= link_to 'Edit', edit_raw_material_product_path(raw_material_product) %></td>
+        <td><%= link_to 'Destroy', raw_material_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Raw Material Product', new_raw_material_product_path %>

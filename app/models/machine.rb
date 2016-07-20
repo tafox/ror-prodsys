@@ -8,7 +8,7 @@ class Machine < ApplicationRecord
 		if schedule[:machine] == 5
 			id = 1
 		else
-			id = schedule[:machine] + 1
+			id = schedule[:machine]
 		end
 		return id
 	end

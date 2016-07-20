@@ -13,6 +13,8 @@ development:
   timeout: 5000
   username: postgres
   password:
+  template: template0
+  encoding: UNICODE
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,6 +26,8 @@ test:
   timeout: 5000
   username: postgres
   password:
+  template: template0
+  encoding: UNICODE
 
 production:
   adapter: postgresql
@@ -32,4 +36,5 @@ production:
   timeout: 5000
   username: postgres
   password:
-
+  template: template0
+  encoding: UNICODE

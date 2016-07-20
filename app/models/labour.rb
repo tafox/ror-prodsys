@@ -8,7 +8,7 @@ class Labour < ApplicationRecord
 		if schedule[:labour] == 5
 			id = 1
 		else
-			id = schedule[:labour] + 1
+			id = schedule[:labour]
 		end
 		return id
 	end

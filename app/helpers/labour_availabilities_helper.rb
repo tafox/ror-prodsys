@@ -1,0 +1,2 @@
+module LabourAvailabilitiesHelper
+end
